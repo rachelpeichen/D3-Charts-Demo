@@ -1,0 +1,95 @@
+#legend-genre {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #ff7f0e;
+}
+
+#legend-artist {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #1f77b4;
+}
+
+#legend-track {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #2ca02c;
+}
+
+#scatter-x-axis-option {
+    margin-left: 300px;
+}
+
+#scatter-y-axis-option {
+    margin-left: 50px;
+}
+
+.l-x-axis-group {
+    color: white;
+    font-size: medium;
+}
+
+.s-x-axis-group {
+    color: white;
+    font-size: medium;
+}
+
+.l-y-axis-group {
+    color: white;
+    font-size: medium;
+}
+
+.s-y-axis-group {
+    color: white;
+    font-size: medium;
+}
+
+.l-circle-title {
+    font-size: small;
+}
+
+.wrap {
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+#table-container {
+    overflow-y: scroll;
+    height: 400px;
+    display: block;
+}
+
+table {
+    font-family: "Oswald", sans-serif;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #7acfbe;
+    width: 50vw;
+    height: 25px;
+}
+
+td {
+    background-color: #ffffff;
+    width: 50vw;
+    text-align: center;
+}
+
+tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tr:nth-of-type(even) td {
+    background-color: #f3f3f3;
+}

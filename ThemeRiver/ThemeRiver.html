@@ -1,0 +1,71 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ThemeRiver.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <title>ThemeRiver</title>
+</head>
+
+<body>
+    <p class="title">ThemeRiver</p>
+    <div class="lengend-container">
+        <div style="display: flex;">
+            <span id="house2" style="display: inline-block;">
+            </span>
+            House / Bedrooms: 2
+        </div>
+        <div style="display: flex;">
+            <span id="house3" style="display: inline-block;">
+            </span>
+            House/Bedrooms: 3
+        </div>
+        <div style="display: flex;">
+            <span id="house4" style="display: inline-block;">
+            </span>
+            House/Bedrooms: 4
+        </div>
+        <div style="display: flex;">
+            <span id="house5" style="display: inline-block;">
+            </span>
+            House/Bedrooms: 5
+        </div>
+        <div style="display: flex;">
+            <span id="unit1" style="display: inline-block;">
+            </span>
+            Unit/Bedrooms: 1
+        </div>
+        <div style="display: flex;">
+            <span id="unit2" style="display: inline-block;">
+            </span>
+            Unit/Bedrooms: 2
+        </div>
+        <div style="display: flex;">
+            <span id="unit3" style="display: inline-block;">
+            </span>
+            Unit/Bedrooms: 3
+        </div>
+    </div>
+    <div style="display: flex;">
+        <svg width="960" height="960" style="display: inline-block;"></svg>
+        <div style="display: inline-block; margin-top: 10vh;">
+            <p class="title">Drag Panel To Reorder Stream!</p>
+            <ul id="list" class="list-group">
+                <li class="list-group-item">house2</li>
+                <li class="list-group-item">house3</li>
+                <li class="list-group-item">house4</li>
+                <li class="list-group-item">house5</li>
+                <li class="list-group-item">unit1</li>
+                <li class="list-group-item">unit2</li>
+                <li class="list-group-item">unit3</li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="ThemeRiver.js" type="module"></script>
+</body>
+
+</html>

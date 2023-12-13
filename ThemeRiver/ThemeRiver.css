@@ -1,0 +1,64 @@
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.lengend-container {
+    display: flex;
+    gap: 2rem;
+    margin: 20px;
+}
+
+#house2 {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: #8dd3c7;
+}
+
+#house3 {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: #ffffb3;
+}
+
+#house4 {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: #bebada;
+}
+
+#house5 {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: #fb8072;
+}
+
+#unit1 {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: #80b1d3;
+}
+
+#unit2 {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: #fdb462;
+}
+
+#unit3 {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: #b3de69;
+}
+
+svg {
+    margin: 20px;
+}

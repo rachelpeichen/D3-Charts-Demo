@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scatter Plot</title>
+</head>
+<style>
+    body {
+        font-family: sans-serif;
+    }
+</style>
+
+<body>
+    <div id="scatter-plot-container"></div>
+    <div style="margin-left: 100px;">
+        <label for="x-axis-attribute">X Axis Attribute: </label>
+        <select id="x-axis-attribute">
+            <option value="sepal length">sepal length</option>
+            <option value="sepal width">sepal width</option>
+            <option value="petal length">petal length</option>
+            <option value="petal width">petal width</option>
+        </select>
+        <label for="y-axis-attribute">Y Axis Attribute: </label>
+        <select id="y-axis-attribute">
+            <option value="sepal length">sepal length</option>
+            <option value="sepal width">sepal width</option>
+            <option value="petal length">petal length</option>
+            <option value="petal width">petal width</option>
+        </select>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="ScatterPlot.js" type="module"></script>
+</body>
+
+</html>

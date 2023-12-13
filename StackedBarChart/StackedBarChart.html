@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StackedBarChart.css">
+    <title>Stacked Bar Chart</title>
+</head>
+
+<body>
+    <p class="title">Stacked Bar Charts - Times World University Rankings 2024</p>
+    <div class="lengend-container">
+        <div style="display: flex;">
+            <span id="square_teaching" style="display: inline-block;">
+            </span>
+            Teaching
+        </div>
+        <div style="display: flex;">
+            <span id="square_research" style="display: inline-block;">
+            </span>
+            Research
+        </div>
+        <div style="display: flex;">
+            <span id="square_citation" style="display: inline-block;">
+            </span>
+            Citations
+        </div>
+        <div style="display: flex;">
+            <span id="square_industry_income" style="display: inline-block;">
+            </span>
+            Industry Income
+        </div>
+        <div style="display: flex;">
+            <span id="square_international_outlook" style="display: inline-block;">
+            </span>
+            International Outlook
+        </div>
+    </div>
+    <div class="selection-container">
+        <label for="sort-key">Sort by: </label>
+        <select id="sort-key">
+            <option value="scores_sum">Overall Scores</option>
+            <option value="scores_teaching">Teaching</option>
+            <option value="scores_research">Research</option>
+            <option value="scores_citations">Citations</option>
+            <option value="scores_industry_income">Industry Income</option>
+            <option value="scores_international_outlook">Internationl Outlook
+            </option>
+        </select>
+        <select id="sort-type">
+            <option value="descending">Descending</option>
+            <option value="ascending">Ascending</option>
+        </select>
+    </div>
+    <svg ></svg>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="StackedBarChart.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HorizonChart.css">
+    <title>Horizon Chart</title>
+</head>
+
+<body>
+    <p class="title">Horizon Chart - Air Pollution in Seoul from 2017 to 2019</p>
+    <p class="note">Note: I use mean to represent value for each day, please wait for seconds to wait for chart render.</p>
+    <div class="selection-container">
+        <label>Select Year: </label>
+        <select id="year-key">
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            </option>
+        </select>
+    </div>
+    <div class="chart-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="HorizonChart.js" type="module"></script>
+</body>
+
+</html>

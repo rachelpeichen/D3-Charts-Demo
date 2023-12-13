@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed Charts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="MixedCharts.css">
+</head>
+
+<body style="background-color: black;">
+    <div class="row">
+        <div class="col-lg-6 text-center text-white">
+            <p class="fw-bold alert alert-info m-2">Force-Directed Graph For Tracks With Popularity >= 90
+            </p>
+            <p>Hover each node on graph to display its details</p>
+            <div class="row text-center">
+                <div class="col-4">
+                    <span id="legend-track"></span>
+                    <p>Tracks</p>
+                    <h5>98</h5>
+                </div>
+                <div class="col-4">
+                    <span id="legend-genre">
+                    </span>
+                    <p>Genres</p>
+                    <h5>22</h5>
+                </div>
+                <div class="col-4">
+                    <span id="legend-artist"></span>
+                    <p>Artists</p>
+                    <h5>39</h5>
+                </div>
+            </div>
+            <div class="forced-graph-container">
+            </div>
+        </div>
+        <div class="col-lg-6 text-center text-white">
+            <p class="fw-bold alert alert-warning m-2">Radar Chart Showing Track's Musical Properties</p>
+            <p>Hover "track" node(green) on graph to display its properties on radar chart</p>
+            <div class="radar-chart-container"></div>
+            <p>Please wait for seconds to load data and render charts at first time...</p>
+        </div>
+    </div>
+    <hr class="solid text-white" style="margin: 20px;">
+    <div id="genres-container" class="container text-white">
+        <h3 class="m-2 text-center">Select at most 10 genres to see the distribution</h3>
+        <p id="genres-count" class="text-center">0/10</p>
+    </div>
+    <hr class="solid text-white" style="margin: 20px;">
+    <div class="row">
+        <div class="col-lg-8 text-center">
+            <p class="fw-bold alert alert-success m-2">Scatter Chart For Selected Genres With Different
+                Properties</p>
+            <p class="text-white">You can drag and zoom scatter chart with different axis properties. Hover each dot to
+                show track details.</p>
+            <div id="scatter-y-axis-option">
+                <div class="input-group m-2 w-50">
+                    <label class="input-group-text" for="scatter-y-property">Y Axis Property</label>
+                    <select id="scatter-y-property" class="form-select">
+                        <option selected>liveness</option>
+                        <option value="danceability">danceability</option>
+                        <option value="instrumentalness">instrumentalness</option>
+                        <option value="speechiness">speechiness</option>
+                        <option value="acousticness">acousticness</option>
+                        <option value="energy">energy</option>
+                    </select>
+                </div>
+            </div>
+            <div class="scatter-chart-container"></div>
+            <div id="scatter-x-axis-option">
+                <div class="input-group m-2 w-50">
+                    <label class="input-group-text" for="scatter-x-property">X Axis Property</label>
+                    <select id="scatter-x-property" class="form-select">
+                        <option selected>danceability</option>
+                        <option value="danceability">danceability</option>
+                        <option value="instrumentalness">instrumentalness</option>
+                        <option value="speechiness">speechiness</option>
+                        <option value="acousticness">acousticness</option>
+                        <option value="energy">energy</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 text-center">
+            <p class="fw-bold alert alert-warning m-2">Popularity Average For Selected Genres</p>
+            <div class="lollipop-chart-container"></div>
+        </div>
+    </div>
+    <div id="table-container" class="text-center container mt-4">
+        <p class="fw-bold alert alert-warning m-2">Popularity Average For All Genres</p>
+        <table>
+            <tr>
+                <th>Genre Name</th>
+                <th>Average Popularity</th>
+            </tr>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="MixedCharts.js" type="module"></script>
+</body>
+
+</html>

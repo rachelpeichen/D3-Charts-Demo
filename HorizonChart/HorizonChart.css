@@ -1,0 +1,14 @@
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.note {
+    font-size: 15px;
+    margin: 20px;
+}
+
+.selection-container {
+    margin: 20px;
+}
